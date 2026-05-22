@@ -9,7 +9,13 @@
       "Bash(New-Item -ItemType Directory -Force -Path \"f:\\\\Decodes\\\\Vibe Coding Files\\\\nidrip central electronics\\\\nidripcentralelectronics\\\\css\")",
       "Bash(Out-Null)",
       "Bash(New-Item -ItemType Directory -Force -Path \"f:\\\\Decodes\\\\Vibe Coding Files\\\\nidrip central electronics\\\\nidripcentralelectronics\\\\js\")",
-      "Bash(Write-Output \"Directories ready\")"
+      "Bash(Write-Output \"Directories ready\")",
+      "PowerShell(node --version)",
+      "PowerShell(npm --version)",
+      "PowerShell(python --version 2>&1)",
+      "mcp__claude_ai_Vercel__deploy_to_vercel",
+      "PowerShell(vercel --version 2>&1)",
+      "PowerShell(npm install -g vercel 2>&1)"
     ],
     "additionalDirectories": [
       "f:\\Decodes\\Vibe Coding Files\\nidrip central electronics\\nidripcentralelectronics"

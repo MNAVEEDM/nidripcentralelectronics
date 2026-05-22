@@ -13,6 +13,8 @@
 </head>
 <body>
 
+<div id="pageLoader" class="page-loader"></div>
+
 <!-- NAVBAR -->
 <nav class="navbar" id="navbar">
   <div class="nav-container">
@@ -23,7 +25,7 @@
         <span class="logo-sub">Electronics &amp; Appliances</span>
       </div>
     </a>
-    <ul class="nav-links" id="navLinks">
+    <ul class="nav-links">
       <li><a href="index.html"    class="nav-link">Home</a></li>
       <li><a href="products.html" class="nav-link">Products</a></li>
       <li><a href="about.html"    class="nav-link active">About</a></li>
@@ -36,6 +38,17 @@
         <span></span><span></span><span></span>
       </button>
     </div>
+  </div>
+</nav>
+
+<nav class="nav-drawer" id="navDrawer" aria-label="Mobile navigation">
+  <a href="index.html"    class="drawer-link">Home        <i class="fas fa-chevron-right"></i></a>
+  <a href="products.html" class="drawer-link">Products    <i class="fas fa-chevron-right"></i></a>
+  <a href="about.html"    class="drawer-link active">About <i class="fas fa-chevron-right"></i></a>
+  <a href="contact.html"  class="drawer-link">Contact     <i class="fas fa-chevron-right"></i></a>
+  <div class="drawer-cta">
+    <a href="tel:07587157450" class="btn btn-outline btn-md" style="justify-content:center;"><i class="fas fa-phone"></i> 07587 157450</a>
+    <a href="contact.html" class="btn btn-primary btn-md" style="justify-content:center;">Get a Quote</a>
   </div>
 </nav>
 
@@ -266,6 +279,16 @@
     </div>
   </div>
 </footer>
+
+<div class="fab-group">
+  <button class="fab fab-top" id="fabTop" data-tip="Back to top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+  <a href="https://wa.me/447587157450" target="_blank" rel="noopener"
+     class="fab fab-wa" data-tip="WhatsApp us" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
 
 <script src="js/main.js"></script>
 </body>
