@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — NI Drip Central Electronics &amp; Appliances</title>
+  <meta name="description" content="Get in touch with NI Drip Central Electronics. Call us, email us, or fill in our contact form — we're always happy to help." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-bolt">⚡</span>
+      <div class="logo-text">
+        <span class="logo-main">NI DRIP CENTRAL</span>
+        <span class="logo-sub">Electronics &amp; Appliances</span>
+      </div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html"    class="nav-link">Home</a></li>
+      <li><a href="products.html" class="nav-link">Products</a></li>
+      <li><a href="about.html"    class="nav-link">About</a></li>
+      <li><a href="contact.html"  class="nav-link active">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="tel:07587157450" class="nav-phone"><i class="fas fa-phone"></i> 07587 157450</a>
+      <a href="contact.html" class="btn btn-primary btn-sm">Get a Quote</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>Contact</span>
+      </div>
+      <h1>Get in Touch</h1>
+      <p>Have a question, need a quote, or want to check if we have something in stock? We're here and happy to help.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- LEFT — info -->
+      <div class="contact-info-card" data-aos>
+        <h3>Contact Details</h3>
+        <p>Get in touch via phone, WhatsApp, or email — we typically respond within a few hours during business hours.</p>
+
+        <div class="cdetail-list">
+          <div class="cdetail">
+            <div class="cdetail-ico"><i class="fas fa-location-dot"></i></div>
+            <div class="cdetail-txt">
+              <strong>Our Address</strong>
+              <span>92 Castle Street<br>Belfast, BT1 1HE<br>Northern Ireland</span>
+            </div>
+          </div>
+          <div class="cdetail">
+            <div class="cdetail-ico"><i class="fas fa-phone"></i></div>
+            <div class="cdetail-txt">
+              <strong>Phone</strong>
+              <a href="tel:07587157450">07587 157450</a>
+            </div>
+          </div>
+          <div class="cdetail">
+            <div class="cdetail-ico"><i class="fab fa-whatsapp"></i></div>
+            <div class="cdetail-txt">
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/447587157450" target="_blank" rel="noopener">Message us on WhatsApp</a>
+            </div>
+          </div>
+          <div class="cdetail">
+            <div class="cdetail-ico"><i class="fas fa-envelope"></i></div>
+            <div class="cdetail-txt">
+              <strong>Email</strong>
+              <a href="mailto:info@nidripcentralelectronics.co.uk">info@nidripcentralelectronics.co.uk</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Opening hours -->
+        <div class="hours-grid">
+          <div class="hours-row">
+            <span>Monday – Friday</span>
+            <span>9:00am – 6:00pm</span>
+          </div>
+          <div class="hours-row">
+            <span>Saturday</span>
+            <span>10:00am – 4:00pm</span>
+          </div>
+          <div class="hours-row closed">
+            <span>Sunday</span>
+            <span>Closed</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT — form -->
+      <div class="form-card" data-aos data-aos-delay="150">
+        <h3>Send Us a Message</h3>
+        <p>Fill in the form below and we'll get back to you as soon as possible — usually within a couple of hours.</p>
+
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" class="form-control" placeholder="John" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Smith" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" class="form-control" placeholder="07xxx xxxxxx" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">What are you enquiring about? *</label>
+            <select id="subject" name="subject" class="form-control" required>
+              <option value="" disabled selected>Select a topic…</option>
+              <option value="product">Product Enquiry</option>
+              <option value="quote">Request a Quote</option>
+              <option value="delivery">Delivery Information</option>
+              <option value="order">Existing Order</option>
+              <option value="warranty">Warranty / Support</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message *</label>
+            <textarea id="message" name="message" class="form-control" rows="5"
+              placeholder="Tell us what you're looking for, any specific requirements, or questions you have…" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-btn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- MAP -->
+    <div style="margin-top:40px;border-radius:var(--r-xl);overflow:hidden;border:1px solid var(--border);height:380px;box-shadow:var(--shadow-lg);" data-aos>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2312.905!2d-5.9285!3d54.5964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486109040613ef79%3A0xa00405386a14c!2s92%20Castle%20St%2C%20Belfast%20BT1%201HE!5e0!3m2!1sen!2suk!4v1"
+        width="100%" height="100%"
+        style="border:0;filter:invert(92%) hue-rotate(180deg) brightness(.88) saturate(.75);"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="NI Drip Central Electronics — 92 Castle Street Belfast">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<!-- QUICK LINKS / FAQs -->
+<section class="features" style="padding:80px 0;">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">FAQs</span>
+      <h2 class="section-title">Common Questions</h2>
+    </div>
+    <div class="features-grid">
+
+      <div class="feat-card" data-aos>
+        <div class="feat-icon"><i class="fas fa-truck-fast"></i></div>
+        <h3>Do you offer same-day delivery?</h3>
+        <p>Yes! Order before midday and we can often deliver the same day across Belfast and surrounding areas. Call us to confirm availability.</p>
+      </div>
+
+      <div class="feat-card" data-aos data-aos-delay="100">
+        <div class="feat-icon"><i class="fas fa-recycle"></i></div>
+        <h3>What does "refurbished" mean?</h3>
+        <p>Our refurbished appliances are professionally cleaned, repaired where necessary, and fully tested so they work like new — at a fraction of the price.</p>
+      </div>
+
+      <div class="feat-card" data-aos data-aos-delay="200">
+        <div class="feat-icon"><i class="fas fa-shield-halved"></i></div>
+        <h3>Do appliances come with a warranty?</h3>
+        <p>Yes, all our appliances come with a warranty. Please contact us for specific warranty details on individual products.</p>
+      </div>
+
+      <div class="feat-card" data-aos data-aos-delay="300">
+        <div class="feat-icon"><i class="fas fa-map-location-dot"></i></div>
+        <h3>What areas do you deliver to?</h3>
+        <p>We deliver across Belfast and Northern Ireland — including Bangor, Lisburn, Carrickfergus, Newtownabbey and more. Not sure? Just ask!</p>
+      </div>
+
+      <div class="feat-card" data-aos data-aos-delay="400">
+        <div class="feat-icon"><i class="fas fa-screwdriver-wrench"></i></div>
+        <h3>Do you offer installation?</h3>
+        <p>Yes — ask us about our installation service when you order and we'll arrange for your appliance to be installed on delivery.</p>
+      </div>
+
+      <div class="feat-card" data-aos data-aos-delay="500">
+        <div class="feat-icon"><i class="fas fa-boxes-stacked"></i></div>
+        <h3>Can landlords order in bulk?</h3>
+        <p>Absolutely. We work with many landlords and property managers across Belfast. We offer competitive bulk pricing — just give us a call to discuss.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container">
+    <div class="cta-box" data-aos>
+      <div>
+        <h2>Prefer to Talk?</h2>
+        <p>Give us a ring — our friendly team is on hand to help you find exactly what you need.</p>
+      </div>
+      <div class="cta-btns">
+        <a href="tel:07587157450" class="btn btn-primary btn-lg">
+          <i class="fas fa-phone"></i> Call 07587 157450
+        </a>
+        <a href="products.html" class="btn btn-outline btn-lg">Browse Products</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <a href="index.html" class="footer-logo">
+          <span class="logo-bolt">⚡</span>
+          <div class="logo-text">
+            <span class="logo-main">NI DRIP CENTRAL</span>
+            <span class="logo-sub">Electronics &amp; Appliances</span>
+          </div>
+        </a>
+        <p class="footer-brand-desc">Quality appliances for every home across Belfast. New and refurbished — always tested, always delivered fast.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="products.html?cat=fridges">Fridges &amp; Freezers</a></li>
+          <li><a href="products.html?cat=washers">Washing Machines</a></li>
+          <li><a href="products.html?cat=cookers">Cookers &amp; Ovens</a></li>
+          <li><a href="products.html?cat=dryers">Tumble Dryers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact-list">
+          <div class="fci"><i class="fas fa-location-dot"></i><span>92 Castle Street, Belfast BT1 1HE</span></div>
+          <div class="fci"><i class="fas fa-phone"></i><a href="tel:07587157450">07587 157450</a></div>
+          <div class="fci"><i class="fas fa-envelope"></i><a href="mailto:info@nidripcentralelectronics.co.uk">info@nidripcentralelectronics.co.uk</a></div>
+          <div class="fci"><i class="fas fa-clock"></i><span>Mon–Sat: 9am – 6pm</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 NI Drip Central Electronics &amp; Appliances Ltd. All rights reserved.</p>
+      <p>Registered in Northern Ireland</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

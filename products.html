@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products — NI Drip Central Electronics &amp; Appliances</title>
+  <meta name="description" content="Browse our full range of new and refurbished appliances — fridges, washing machines, cookers, tumble dryers and more, with same-day delivery across Belfast." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-bolt">⚡</span>
+      <div class="logo-text">
+        <span class="logo-main">NI DRIP CENTRAL</span>
+        <span class="logo-sub">Electronics &amp; Appliances</span>
+      </div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html"    class="nav-link">Home</a></li>
+      <li><a href="products.html" class="nav-link active">Products</a></li>
+      <li><a href="about.html"    class="nav-link">About</a></li>
+      <li><a href="contact.html"  class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="tel:07587157450" class="nav-phone"><i class="fas fa-phone"></i> 07587 157450</a>
+      <a href="contact.html" class="btn btn-primary btn-sm">Get a Quote</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-inner">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>Products</span>
+      </div>
+      <h1>Our Appliances</h1>
+      <p>New and professionally refurbished appliances from the UK's top brands — all tested, all ready to deliver.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products-section">
+  <div class="container">
+    <div class="products-layout">
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+
+        <div class="sidebar-card">
+          <h4>Category</h4>
+          <div class="filter-list">
+            <label class="filter-item">
+              <input type="checkbox" class="js-filter" value="fridges" />
+              <label>Fridges &amp; Freezers <span class="filter-count">8</span></label>
+            </label>
+            <label class="filter-item">
+              <input type="checkbox" class="js-filter" value="washers" />
+              <label>Washing Machines <span class="filter-count">6</span></label>
+            </label>
+            <label class="filter-item">
+              <input type="checkbox" class="js-filter" value="cookers" />
+              <label>Cookers &amp; Ovens <span class="filter-count">5</span></label>
+            </label>
+            <label class="filter-item">
+              <input type="checkbox" class="js-filter" value="dryers" />
+              <label>Tumble Dryers <span class="filter-count">4</span></label>
+            </label>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <h4>Condition</h4>
+          <div class="filter-list">
+            <label class="filter-item">
+              <input type="checkbox" class="js-filter" value="new" />
+              <label>Brand New <span class="filter-count">14</span></label>
+            </label>
+            <label class="filter-item">
+              <input type="checkbox" class="js-filter" value="refurbished" />
+              <label>Refurbished <span class="filter-count">9</span></label>
+            </label>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <h4>Delivery</h4>
+          <div class="filter-list">
+            <label class="filter-item">
+              <input type="checkbox" />
+              <label>Same Day</label>
+            </label>
+            <label class="filter-item">
+              <input type="checkbox" />
+              <label>Next Day</label>
+            </label>
+          </div>
+        </div>
+
+        <!-- CTA in sidebar -->
+        <div class="sidebar-card" style="background:var(--accent-glow);border-color:var(--accent-ring);">
+          <h4 style="color:var(--accent-light)">Need Advice?</h4>
+          <p style="font-size:13px;color:var(--text-300);line-height:1.65;margin-bottom:14px;">
+            Not sure which appliance is right for you? Give us a call and we'll help you find the perfect fit.
+          </p>
+          <a href="tel:07587157450" class="btn btn-primary btn-sm" style="width:100%;justify-content:center;">
+            <i class="fas fa-phone"></i> Call Us
+          </a>
+        </div>
+
+      </aside>
+
+      <!-- MAIN -->
+      <main class="products-main">
+
+        <div class="products-bar">
+          <p class="products-count">Showing <strong id="productCount">12</strong> appliances</p>
+          <select class="sort-select" id="sortSelect" aria-label="Sort products">
+            <option value="featured">Featured</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+          </select>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+
+          <!-- ── Fridges & Freezers ── -->
+
+          <div class="product-card" data-cat="fridges" data-price="649">
+            <div class="p-img">
+              <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=500&q=80" alt="Samsung American-Style Fridge Freezer" loading="lazy" />
+              <span class="p-badge badge-new">New</span>
+            </div>
+            <div class="p-info">
+              <p class="p-brand">Samsung</p>
+              <p class="p-name">RS8000 American-Style Fridge Freezer</p>
+              <p class="p-spec">636L · Twin Cooling · No Frost · Silver</p>
+              <div class="p-footer">
+                <span class="p-price"><span class="currency">£</span>649</span>
+                <button class="p-cta" title="Enquire"><i class="fas fa-phone"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-cat="fridges" data-price="399">
+            <div class="p-img">
+              <img src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=500&q=80" alt="LG 70/30 Fridge Freezer" loading="lazy" />
+              <span class="p-badge badge-new">New</span>
+            </div>
+            <div class="p-info">
+              <p class="p-brand">LG</p>
+              <p class="p-name">70/30 Frost-Free Fridge Freezer</p>
+              <p class="p-spec">451L · Frost Free · A+ Rated · Dark Graphite</p>
+              <div class="p-footer">
+                <span class="p-price"><span class="currency">£</span>399</span>
+                <button class="p-cta" title="Enquire"><i class="fas fa-phone"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-cat="fridges" data-price="179">
+            <div class="p-img">
+              <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=500&q=80" alt="Hotpoint Fridge Freezer" loading="lazy" />
+              <span class="p-badge badge-refurb">Refurbished</span>
+            </div>
+            <div class="p-info">
+              <p class="p-brand">Hotpoint</p>
+              <p class="p-name">60cm Fridge Freezer</p>
+              <p class="p-spec">340L · Auto Defrost · A+ Rated · White</p>
+              <div class="p-footer">
+                <span class="p-price"><span class="currency">£</span>179</span>
+                <button class="p-cta" title="Enquire"><i class="fas fa-phone"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-cat="fridges" data-price="89">
+            <div class="p-img">
+              <img src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=500&q=80" alt="Beko Undercounter Fridge" loading="lazy" />
+              <span class="p-badge badge-refurb">Refurbished</span>
+            </div>
+            <div class="p-info">
+              <p class="p-brand">Beko</p>
+              <p class="p-name">Undercounter Larder Fridge</p>
+              <p class="p-spec">97L · 50cm Wide · A+ · White</p>
+              <div class="p-footer">
+                <span class="p-price"><span class="currency">£</span>89</span>
+                <button class="p-cta" title="Enquire"><i class="fas fa-phone"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Washing Machines ── -->
+
+          <div class="product-card" data-cat="washers" data-price="379">
+            <div class="p-img">
+              <img src="https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=500&q=80" alt="Samsung 9kg Washing Machine" loading="lazy" />
+              <span class="p-badge badge-new">New</span>
+            </div>
+            <div class="p-info">
+              <p class="p-brand">Samsung</p>
+              <p class="p-name">9kg EcoBubble Washing Machine</p>
+              <p class="p-spec">1400 RPM · A-Rated · AI Wash · White</p>
+              <div class="p-footer">
+                <span class="p-price"><span class="currency">£</span>379</span>
+                <button class="p-cta" title="Enquire"><i class="fas fa-phone"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-cat="washers" data-price="329">
+            <div class="p-img">
+              <img src="https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=500&q=80" alt="Bosch Serie 6 Washing Machine" loading="lazy" />
+              <span class="p-badge badge-new">New</span>
+            </div>
+            <div class="p-info">
+              <p class="p-brand">Bosch</p>
+              <p class="p-name">Serie 6 8kg Washing Machine</p>
+              <p class="p-spec">1400 RPM · B-Rated · SpeedPerfect · White</p>
+              <div class="p-footer">
+                <span class="p-price"><span class="currency">£</span>329</span>
+                <button class="p-cta" title="Enquire"><i class="fas fa-phone"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-cat="washers" data-price="159">
+            <div class="p-img">
+              <img src="https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=500&q=80" alt="Hotpoint 8kg Washing Machine" loading="lazy" />
+              <span class="p-badge badge-refurb">Refurbished</span>
+            </div>
+            <div class="p-info">
+              <p class="p-brand">Hotpoint</p>
+              <p class="p-name">8kg Washing Machine</p>
+              <p class="p-spec">1400 RPM · A-Rated · 16 Programmes · White</p>
+              <div class="p-footer">
+                <span class="p-price"><span class="currency">£</span>159</span>
+                <button class="p-cta" title="Enquire"><i class="fas fa-phone"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-cat="washers" data-price="139">
+            <div class="p-img">
+              <img src="https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=500&q=80" alt="Indesit 7kg Washing Machine" loading="lazy" />
+              <span class="p-badge badge-refurb">Refurbished</span>
+            </div>
+            <div class="p-info">
+              <p class="p-brand">Indesit</p>
+              <p class="p-name">7kg Washing Machine</p>
+              <p class="p-spec">1200 RPM · B-Rated · Push &amp; Wash · White</p>
+              <div class="p-footer">
+                <span class="p-price"><span class="currency">£</span>139</span>
+                <button class="p-cta" title="Enquire"><i class="fas fa-phone"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Cookers & Ovens ── -->
+
+          <div class="product-card" data-cat="cookers" data-price="449">
+            <div class="p-img">
+              <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&q=80" alt="Samsung Electric Range Cooker" loading="lazy" />
+              <span class="p-badge badge-new">New</span>
+            </div>
+            <div class="p-info">
+              <p class="p-brand">Samsung</p>
+              <p class="p-name">60cm Electric Range Cooker</p>
+              <p class="p-spec">70L Oven · Ceramic Hob · Dual Zone · Black</p>
+              <div class="p-footer">
+                <span class="p-price"><span class="currency">£</span>449</span>
+                <button class="p-cta" title="Enquire"><i class="fas fa-phone"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-cat="cookers" data-price="249">
+            <div class="p-img">
+              <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&q=80" alt="Beko 60cm Gas Cooker" loading="lazy" />
+              <span class="p-badge badge-new">New</span>
+            </div>
+            <div class="p-info">
+              <p class="p-brand">Beko</p>
+              <p class="p-name">60cm Freestanding Gas Cooker</p>
+              <p class="p-spec">67L Oven · 4-Burner Hob · A-Rated · White</p>
+              <div class="p-footer">
+                <span class="p-price"><span class="currency">£</span>249</span>
+                <button class="p-cta" title="Enquire"><i class="fas fa-phone"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card" data-cat="cookers" data-price="149">
+            <div class="p-img">
+              <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&q=80" alt="Hotpoint Gas Cooker" loading="lazy" />
+              <span class="p-badge badge-refurb">Refurbished</span>
+            </div>
+            <div class="p-info">
+              <p class="p-brand">Hotpoint</p>
+              <p class="p-name">50cm Freestanding Gas Cooker</p>
+              <p class="p-spec">60L Oven · 4-Burner Hob · Auto Ignition · White</p>
+              <div class="p-footer">
+                <span class="p-price"><span class="currency">£</span>149</span>
+                <button class="p-cta" title="Enquire"><i class="fas fa-phone"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Tumble Dryers ── -->
+
+          <div class="product-card" data-cat="dryers" data-price="299">
+            <div class="p-img">
+              <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=500&q=80" alt="Bosch Condenser Tumble Dryer" loading="lazy" />
+              <span class="p-badge badge-new">New</span>
+            </div>
+            <div class="p-info">
+              <p class="p-brand">Bosch</p>
+              <p class="p-name">8kg Condenser Tumble Dryer</p>
+              <p class="p-spec">Condenser · B-Rated · 15 Programmes · White</p>
+              <div class="p-footer">
+                <span class="p-price"><span class="currency">£</span>299</span>
+                <button class="p-cta" title="Enquire"><i class="fas fa-phone"></i></button>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /products-grid -->
+      </main>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="container">
+    <div class="cta-box">
+      <div>
+        <h2>Can't Find What You Need?</h2>
+        <p>We have more stock arriving weekly. Call us and we'll source exactly what you're looking for.</p>
+      </div>
+      <div class="cta-btns">
+        <a href="tel:07587157450" class="btn btn-primary btn-lg">
+          <i class="fas fa-phone"></i> 07587 157450
+        </a>
+        <a href="contact.html" class="btn btn-outline btn-lg">Send an Enquiry</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <a href="index.html" class="footer-logo">
+          <span class="logo-bolt">⚡</span>
+          <div class="logo-text">
+            <span class="logo-main">NI DRIP CENTRAL</span>
+            <span class="logo-sub">Electronics &amp; Appliances</span>
+          </div>
+        </a>
+        <p class="footer-brand-desc">Quality appliances for every home across Belfast. New and refurbished — always tested, always delivered fast.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="products.html?cat=fridges">Fridges &amp; Freezers</a></li>
+          <li><a href="products.html?cat=washers">Washing Machines</a></li>
+          <li><a href="products.html?cat=cookers">Cookers &amp; Ovens</a></li>
+          <li><a href="products.html?cat=dryers">Tumble Dryers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact-list">
+          <div class="fci"><i class="fas fa-location-dot"></i><span>92 Castle Street, Belfast BT1 1HE</span></div>
+          <div class="fci"><i class="fas fa-phone"></i><a href="tel:07587157450">07587 157450</a></div>
+          <div class="fci"><i class="fas fa-envelope"></i><a href="mailto:info@nidripcentralelectronics.co.uk">info@nidripcentralelectronics.co.uk</a></div>
+          <div class="fci"><i class="fas fa-clock"></i><span>Mon–Sat: 9am – 6pm</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 NI Drip Central Electronics &amp; Appliances Ltd. All rights reserved.</p>
+      <p>Registered in Northern Ireland</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NI Drip Central Electronics &amp; Appliances | Belfast</title>
+  <meta name="description" content="Quality fridges, washers, cookers and more — new and professionally refurbished appliances with same/next day delivery across Belfast and Northern Ireland." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- =====================================================================
+     NAVBAR
+===================================================================== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+
+    <a href="index.html" class="nav-logo">
+      <span class="logo-bolt">⚡</span>
+      <div class="logo-text">
+        <span class="logo-main">NI DRIP CENTRAL</span>
+        <span class="logo-sub">Electronics &amp; Appliances</span>
+      </div>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html"    class="nav-link active">Home</a></li>
+      <li><a href="products.html" class="nav-link">Products</a></li>
+      <li><a href="about.html"    class="nav-link">About</a></li>
+      <li><a href="contact.html"  class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="tel:07587157450" class="nav-phone">
+        <i class="fas fa-phone"></i>
+        07587 157450
+      </a>
+      <a href="contact.html" class="btn btn-primary btn-sm">Get a Quote</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</nav>
+
+<!-- =====================================================================
+     HERO
+===================================================================== -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <img
+      src="https://images.unsplash.com/photo-1556909211-36987daf7b4d?w=1920&q=80"
+      alt="Modern kitchen with appliances"
+      class="hero-img"
+    />
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Same Day Delivery Available in Belfast
+    </div>
+
+    <h1 class="hero-title">
+      Quality Appliances.<br>
+      <span class="text-accent">Unbeatable Prices.</span>
+    </h1>
+
+    <p class="hero-sub">
+      New and professionally refurbished fridges, washing machines, cookers
+      and more — delivered to your door across Belfast &amp; Northern Ireland.
+    </p>
+
+    <div class="hero-actions">
+      <a href="products.html" class="btn btn-primary btn-lg">
+        Shop Now <i class="fas fa-arrow-right"></i>
+      </a>
+      <a href="contact.html" class="btn btn-outline btn-lg">
+        Get a Quote
+      </a>
+    </div>
+
+    <!-- DJI-style stats bar -->
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="stat-val">500<sup>+</sup></span>
+        <span class="stat-lbl">Appliances</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="hero-stat">
+        <span class="stat-val">Same</span>
+        <span class="stat-lbl">Day Delivery</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="hero-stat">
+        <span class="stat-val">100<sup>%</sup></span>
+        <span class="stat-lbl">Tested &amp; Checked</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="hero-stat">
+        <span class="stat-val">2023</span>
+        <span class="stat-lbl">Established</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll-cue">
+    <span>Scroll</span>
+    <div class="scroll-bar"></div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     PRODUCT CATEGORIES
+===================================================================== -->
+<section class="categories" id="products">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Our Range</span>
+      <h2 class="section-title">Shop by Category</h2>
+      <p class="section-sub">From kitchen essentials to laundry solutions — everything your home needs, at prices that make sense.</p>
+    </div>
+
+    <div class="categories-grid">
+
+      <!-- Large card -->
+      <a href="products.html?cat=fridges" class="cat-card cat-card--lg">
+        <div class="cat-img">
+          <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=900&q=80" alt="Fridges & Freezers" />
+        </div>
+        <div class="cat-overlay"></div>
+        <div class="cat-body">
+          <div>
+            <h3>Fridges &amp; Freezers</h3>
+            <span class="cat-count">50+ items</span>
+          </div>
+          <div class="cat-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+      </a>
+
+      <a href="products.html?cat=washers" class="cat-card">
+        <div class="cat-img">
+          <img src="https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=700&q=80" alt="Washing Machines" />
+        </div>
+        <div class="cat-overlay"></div>
+        <div class="cat-body">
+          <div>
+            <h3>Washing Machines</h3>
+            <span class="cat-count">40+ items</span>
+          </div>
+          <div class="cat-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+      </a>
+
+      <a href="products.html?cat=cookers" class="cat-card">
+        <div class="cat-img">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80" alt="Cookers & Ovens" />
+        </div>
+        <div class="cat-overlay"></div>
+        <div class="cat-body">
+          <div>
+            <h3>Cookers &amp; Ovens</h3>
+            <span class="cat-count">35+ items</span>
+          </div>
+          <div class="cat-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+      </a>
+
+      <a href="products.html?cat=dryers" class="cat-card">
+        <div class="cat-img">
+          <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=700&q=80" alt="Tumble Dryers" />
+        </div>
+        <div class="cat-overlay"></div>
+        <div class="cat-body">
+          <div>
+            <h3>Tumble Dryers</h3>
+            <span class="cat-count">25+ items</span>
+          </div>
+          <div class="cat-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     WHY CHOOSE US
+===================================================================== -->
+<section class="features" id="features">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Why NI Drip</span>
+      <h2 class="section-title">Built Around You</h2>
+      <p class="section-sub">We exist to make getting a quality appliance as simple and affordable as possible.</p>
+    </div>
+
+    <div class="features-grid">
+
+      <div class="feat-card" data-aos data-aos-delay="0">
+        <div class="feat-icon"><i class="fas fa-truck-fast"></i></div>
+        <h3>Same Day Delivery</h3>
+        <p>Order before midday and we'll deliver the same day across Belfast and surrounding areas. No waiting around for days on end.</p>
+      </div>
+
+      <div class="feat-card" data-aos data-aos-delay="100">
+        <div class="feat-icon"><i class="fas fa-circle-check"></i></div>
+        <h3>100% Tested</h3>
+        <p>Every appliance — new or refurbished — is professionally tested and inspected before it leaves our warehouse. Zero compromises.</p>
+      </div>
+
+      <div class="feat-card" data-aos data-aos-delay="200">
+        <div class="feat-icon"><i class="fas fa-tag"></i></div>
+        <h3>No Retail Markups</h3>
+        <p>We cut out the middleman and pass the savings to you. Quality appliances at prices that actually make sense.</p>
+      </div>
+
+      <div class="feat-card" data-aos data-aos-delay="300">
+        <div class="feat-icon"><i class="fas fa-shield-halved"></i></div>
+        <h3>Warranty Included</h3>
+        <p>All appliances come with a warranty for your peace of mind. Shop with confidence knowing you're fully covered.</p>
+      </div>
+
+      <div class="feat-card" data-aos data-aos-delay="400">
+        <div class="feat-icon"><i class="fas fa-recycle"></i></div>
+        <h3>New &amp; Refurbished</h3>
+        <p>Choose from brand-new appliances or professionally refurbished ones from top brands — at a fraction of the retail price.</p>
+      </div>
+
+      <div class="feat-card" data-aos data-aos-delay="500">
+        <div class="feat-icon"><i class="fas fa-headset"></i></div>
+        <h3>Local Belfast Support</h3>
+        <p>We're a Belfast-based business. Real people, real support. Call, WhatsApp or email us — we're always on hand to help.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     HOW IT WORKS
+===================================================================== -->
+<section class="how" id="how">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Simple Process</span>
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-sub">Getting your appliance has never been easier. Three steps is all it takes.</p>
+    </div>
+
+    <div class="steps">
+
+      <div class="step-card" data-aos>
+        <div class="step-num">01</div>
+        <div class="step-ico"><i class="fas fa-magnifying-glass"></i></div>
+        <h3>Browse &amp; Choose</h3>
+        <p>Explore our wide range of new and refurbished appliances online or give us a call. Find exactly what you need at a price that works for you.</p>
+      </div>
+
+      <div class="step-connector" data-aos data-aos-delay="150">
+        <i class="fas fa-chevron-right"></i>
+      </div>
+
+      <div class="step-card" data-aos data-aos-delay="200">
+        <div class="step-num">02</div>
+        <div class="step-ico"><i class="fas fa-phone-volume"></i></div>
+        <h3>Order &amp; Confirm</h3>
+        <p>Place your order online or call us directly at 07587 157450. We'll confirm your order and arrange a delivery slot that suits you.</p>
+      </div>
+
+      <div class="step-connector" data-aos data-aos-delay="300">
+        <i class="fas fa-chevron-right"></i>
+      </div>
+
+      <div class="step-card" data-aos data-aos-delay="400">
+        <div class="step-num">03</div>
+        <div class="step-ico"><i class="fas fa-house-chimney"></i></div>
+        <h3>Delivered to Your Door</h3>
+        <p>We deliver same day or next day. Ask about our installation service to get your new appliance set up and ready to use right away.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     BRANDS
+===================================================================== -->
+<section class="brands">
+  <div class="container">
+    <div class="section-header" style="margin-bottom:40px">
+      <span class="section-tag">Trusted Brands</span>
+      <h2 class="section-title">We Stock the Best</h2>
+    </div>
+    <div class="brands-row">
+      <div class="brand-pill">Samsung</div>
+      <div class="brand-pill">LG</div>
+      <div class="brand-pill">Bosch</div>
+      <div class="brand-pill">Hotpoint</div>
+      <div class="brand-pill">Indesit</div>
+      <div class="brand-pill">Beko</div>
+      <div class="brand-pill">Whirlpool</div>
+      <div class="brand-pill">AEG</div>
+      <div class="brand-pill">Hoover</div>
+      <div class="brand-pill">Zanussi</div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     TESTIMONIALS
+===================================================================== -->
+<section class="testimonials" id="reviews">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Reviews</span>
+      <h2 class="section-title">What Our Customers Say</h2>
+      <p class="section-sub">Hundreds of happy customers across Belfast and Northern Ireland.</p>
+    </div>
+
+    <div class="testi-grid">
+
+      <div class="testi-card" data-aos>
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p>"Ordered a fridge in the morning and it was at my door the same afternoon. Excellent condition, great price — couldn't be happier!"</p>
+        <div class="reviewer">
+          <div class="reviewer-av">SL</div>
+          <div>
+            <strong>Sarah L.</strong>
+            <span>Belfast City Centre</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card testi-card--featured" data-aos data-aos-delay="150">
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p>"As a landlord with multiple properties, NI Drip Central is my go-to. Always have stock, reliable delivery, and prices that make financial sense. Couldn't recommend more highly."</p>
+        <div class="reviewer">
+          <div class="reviewer-av">JM</div>
+          <div>
+            <strong>James M.</strong>
+            <span>Property Manager, Belfast</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card" data-aos data-aos-delay="300">
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+        <p>"Brilliant from start to finish. The refurbished washing machine looks and works like new. Saved over £200 compared to buying retail!"</p>
+        <div class="reviewer">
+          <div class="reviewer-av">PN</div>
+          <div>
+            <strong>Patricia N.</strong>
+            <span>North Belfast</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     DELIVERY
+===================================================================== -->
+<section class="delivery" id="delivery">
+  <div class="container">
+    <div class="delivery-grid">
+
+      <div class="delivery-content" data-aos>
+        <span class="section-tag">Delivery</span>
+        <h2>We Deliver Across<br>Belfast &amp; Northern Ireland</h2>
+        <p>Our delivery team covers Belfast city centre and surrounding areas. Same-day delivery is available when you order before midday — no fuss, no waiting.</p>
+        <ul class="delivery-list">
+          <li><i class="fas fa-check"></i> Belfast City Centre</li>
+          <li><i class="fas fa-check"></i> North, South, East &amp; West Belfast</li>
+          <li><i class="fas fa-check"></i> Bangor &amp; Newtownards</li>
+          <li><i class="fas fa-check"></i> Lisburn &amp; Dunmurry</li>
+          <li><i class="fas fa-check"></i> Carrickfergus &amp; Newtownabbey</li>
+          <li><i class="fas fa-check"></i> And surrounding areas — ask us!</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary btn-md">
+          Check Your Area <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="delivery-map" data-aos data-aos-delay="200">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2312.905!2d-5.9285!3d54.5964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486109040613ef79%3A0xa00405386a14c!2s92%20Castle%20St%2C%20Belfast%20BT1%201HE!5e0!3m2!1sen!2suk!4v1"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="NI Drip Central Electronics Location — 92 Castle Street Belfast">
+        </iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     CTA BANNER
+===================================================================== -->
+<section class="cta">
+  <div class="container">
+    <div class="cta-box" data-aos>
+      <div>
+        <h2>Ready to Upgrade Your Home?</h2>
+        <p>Browse our full range or get in touch for a personalised quote today.</p>
+      </div>
+      <div class="cta-btns">
+        <a href="products.html" class="btn btn-primary btn-lg">
+          View All Products
+        </a>
+        <a href="tel:07587157450" class="btn btn-outline btn-lg">
+          <i class="fas fa-phone"></i> 07587 157450
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     FOOTER
+===================================================================== -->
+<footer class="footer">
+  <div class="container">
+
+    <div class="footer-top">
+
+      <!-- Brand -->
+      <div>
+        <a href="index.html" class="footer-logo">
+          <span class="logo-bolt">⚡</span>
+          <div class="logo-text">
+            <span class="logo-main">NI DRIP CENTRAL</span>
+            <span class="logo-sub">Electronics &amp; Appliances</span>
+          </div>
+        </a>
+        <p class="footer-brand-desc">
+          Quality appliances for every home across Belfast. New and refurbished — always tested, always delivered fast.
+        </p>
+        <div class="footer-social">
+          <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Categories -->
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="products.html?cat=fridges">Fridges &amp; Freezers</a></li>
+          <li><a href="products.html?cat=washers">Washing Machines</a></li>
+          <li><a href="products.html?cat=cookers">Cookers &amp; Ovens</a></li>
+          <li><a href="products.html?cat=dryers">Tumble Dryers</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact-list">
+          <div class="fci">
+            <i class="fas fa-location-dot"></i>
+            <span>92 Castle Street<br>Belfast, BT1 1HE</span>
+          </div>
+          <div class="fci">
+            <i class="fas fa-phone"></i>
+            <a href="tel:07587157450">07587 157450</a>
+          </div>
+          <div class="fci">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:info@nidripcentralelectronics.co.uk">info@nidripcentralelectronics.co.uk</a>
+          </div>
+          <div class="fci">
+            <i class="fas fa-clock"></i>
+            <span>Mon–Sat: 9am – 6pm</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 NI Drip Central Electronics &amp; Appliances Ltd. All rights reserved.</p>
+      <p>Registered in Northern Ireland</p>
+    </div>
+
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
