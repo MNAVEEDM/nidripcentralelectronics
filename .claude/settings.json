@@ -15,7 +15,9 @@
       "PowerShell(python --version 2>&1)",
       "mcp__claude_ai_Vercel__deploy_to_vercel",
       "PowerShell(vercel --version 2>&1)",
-      "PowerShell(npm install -g vercel 2>&1)"
+      "PowerShell(npm install -g vercel 2>&1)",
+      "Read(//c/Users/M.Naveed/AppData/Local/Temp/claude/f--Decodes-Vibe-Coding-Files-nidrip-central-electronics-nidripcentralelectronics/9dd3526f-98ef-451d-b22c-ea93882b2d66/tasks/**)",
+      "mcp__claude_ai_Vercel__get_deployment"
     ],
     "additionalDirectories": [
       "f:\\Decodes\\Vibe Coding Files\\nidrip central electronics\\nidripcentralelectronics"
